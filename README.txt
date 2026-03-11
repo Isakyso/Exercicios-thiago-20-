@@ -1,5 +1,5 @@
 # Exercicios-thiago-20-
-// TESTE DE SELEÇAO 1
+//TESTE DE SELEÇAO 1
 #include <stdio.h>
 
 
