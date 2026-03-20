@@ -499,3 +499,88 @@ int main() {
   printf("%d\n", X + 10);
      return 0;
 }
+
+// Animal
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   string p1, p2, p3;
+   
+   cin >> p1 >> p2 >> p3;
+   
+   if(p1 == "vertebrado" && p2 == "ave" && p3 == "carnivoro") {
+       cout << "aguia" << endl;
+   }else if(p1 == "vertebrado" && p2 == "ave" && p3 == "onivoro") {
+     cout << "pomba" << endl;  
+   }else if(p1 == "vertebrado" && p2 == "mamifero" && p3 == "onivoro") {
+       cout << "homem" << endl;
+   }else if(p1 == "vertebrado" && p2 == "mamifero" && p3 == "herbivoro") {
+       cout << "vaca" << endl;
+   }else if(p1 == "invertebrado" && p2 == "inseto" && p3 == "hematofago") {
+       cout << "pulga" << endl;
+   }else if(p1 == "invertebrado" && p2 == "inseto" && p3 == "herbivoro") {
+       cout << "lagarta" << endl;
+   }else if(p1 == "invertebrado" && p2 == "anelideo" && p3 == "hematofago") {
+       cout << "sanguessuga" << endl;
+   }else if(p1 == "invertebrado" && p2 == "anelideo" && p3 == "onivoro") {
+       cout << "minhoca" << endl;
+   }
+ 
+    return 0;
+}
+// Imposto
+
+#include <stdio.h>
+
+int main() {
+    float salary, value1, value2, value3, value4, value5, value6, value7, impost1, impost2, impost3;
+
+    scanf("%f", &salary);
+
+    if (salary <= 2000.00) {
+        printf("Isento\n");
+    } else if (salary <= 3000.00) {
+        value1 = salary - 2000.00;
+        impost1 = value1 * 0.08;
+        printf("R$ %.2f\n", impost1);
+    } else if (salary <= 4500.00) {
+        value2 = salary - 3000.00;
+        value4 = value2 * 0.18;
+        impost2 = 80.00 + value4;
+        printf("R$ %.2f\n", impost2);
+    } else {
+        value5 = salary - 4500.00;
+        value7 = value5 * 0.28;
+        impost3 = 80.00 + 270.00 + value7;
+        printf("R$ %.2f\n", impost3);
+    }
+
+    return 0;
+}
+
+// tempo jogo minutos
+
+#include <stdio.h>
+ 
+int main() {
+ int horainicial, horafinal, minutoinicial, minutofinal;
+ int inicio, fim, duracao, horas, minutos;
+ 
+ scanf("%d %d %d %d", &horainicial, &minutoinicial, &horafinal, &minutofinal);
+ 
+ inicio = horainicial * 60 + minutoinicial;
+ fim = horafinal * 60 + minutofinal;
+
+ if(fim > inicio){
+     duracao = fim - inicio;
+ }else{
+     duracao = (24 * 60 - inicio) + fim;
+ }
+ horas = duracao / 60;
+ minutos = duracao % 60;
+ 
+ printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horas, minutos);
+    return 0;
+}
